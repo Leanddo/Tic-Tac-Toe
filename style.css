@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Climate Crisis", sans-serif;
+}
+body {
+  background-color: #3d7ad6;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 350px;
+}
+.grid {
+  display: grid;
+  grid-template-rows: 160px 160px 160px;
+  grid-template-columns: 160px 160px 160px;
+  gap: 30px;
+  border-radius: 50px;
+  border-top: 20px solid #000;
+  border-right: 20px solid #000;
+  border-left: 30px solid #000;
+  border-bottom: 30px solid #000;
+  background: #fff;
+  padding: 30px;
+  position: relative;
+  font-size: 5rem;
+}
+.box {
+  display: flex;
+  width: 170px;
+  height: 170px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #c9f9fc;
+  border-radius: 15px;
+  border-top: 10px solid #000;
+  border-right: 10px solid #000;
+  border-left: 15px solid #000;
+  border-bottom: 15px solid #000;
+  color: #cdd11e;
+}
+#title {
+  font-size: 4.5rem;
+}
+#infogame {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+#x {
+  font-size: 3rem;
+  color: #cdd11e;
+}
+#o {
+  font-size: 3rem;
+  color: #f13a1d;
+}
+#title {
+  margin-bottom: 25px;
+}
+.scorep {
+  font-size: 1.5rem;
+}
+#restart {
+  background-color: #000;
+  padding: 20px;
+  border-radius: 15px 0 0 15px;
+  width: 100px;
+  position: absolute;
+  bottom: 50px;
+  left: -100px;
+  border: none;
+  cursor: pointer;
+  
+  & img {
+    width: 40px;
+   
+  }
+}
+#winAlert{
+  background-color: #000;
+  padding: 20px;
+  border-radius: 15px 0 0 15px;
+  width: 280px;
+  height: 83px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  z-index: -1;
+  
+  font-size: 1rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  transition: left 1s ease;
+}
+
+.playerX{
+  color:#cdd11e;
+}
+.playerO{
+  color: #f13a1d; 
+}
